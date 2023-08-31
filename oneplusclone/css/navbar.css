@@ -1,0 +1,456 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'OnePlus Sans Text', 'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+}
+.navbar1
+{
+    /* border: 2px solid black; */
+}
+.navbar
+{
+    display: flex;
+    width: 100%;
+    position: relative;
+    position: fixed;
+    background-color: whitesmoke;
+    z-index: 1;
+    /* border: 2px solid red; */
+}
+.navbar::after{
+    content: "";
+    background-color: rgba(0, 0, 0,0.5);
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    z-index: 1;
+}
+.nav1
+{
+    display: flex;
+    width: 20%;
+    /* border: 2px solid black; */
+    padding-left: 50px;
+}
+.logo h1
+{
+    height: 40px;
+    width: 170px;
+    color: red;
+    /* border: 2px solid green; */
+}
+.nav2
+{
+
+    width: 70%;
+    font-size: 1rem;
+    display: flex;
+    /* border: 2px solid rgb(0, 0, 0); */
+}
+.bar1{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+    /* border: 2px solid rgb(172, 103, 1); */
+}
+.bar11
+{
+    
+    display: flex;
+    /* align-items: center; */
+    /* justify-items: center; */
+
+    column-gap: 1.5rem;
+}
+.item
+{
+    list-style-type: none;
+    position: relative;
+    margin-top: 22px;
+    height: 40px;
+
+    /* border: 2px solid green; */
+}
+li:hover
+{
+    cursor: pointer;
+}
+.item:hover::after
+{
+    content: "";
+    background-color: red;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    z-index: 2;
+}
+
+.bar2{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding-left: 40px;
+    width: 40%;
+}
+.bar22
+{
+    
+    display: flex;
+    column-gap: 1.5rem;
+}
+.item1
+{
+    list-style-type: none;
+}
+.nav3
+{
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    
+    width: 10%;
+    /* border: 2px solid rgb(70, 5, 155); */
+}
+.icon1
+{
+    padding-left: 5%;
+    display: flex;
+    justify-items: flex-end;
+    column-gap: 1rem;
+    align-items: center;
+}
+.phone,.phone1,.phone2,.phone3,.phone4,.phone5
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top:41px;
+    background-color: white;
+    /* top: 10; */
+    /* border: 2px solid red; */
+    visibility: hidden;
+    z-index: 1;
+    
+}
+.phone::after,.phone1::after,.phone2::after,.phone3::after,.phone4::after,.phone5::after
+{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 240px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    z-index: 1;
+}
+.d1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d11 img{
+    height: 200px;
+}
+.d11 P{
+     margin-left: 41px;
+}
+.d2{
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.d2 button
+{
+    width: 170px;
+    height: 40px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+.d2 button:hover{
+    cursor: pointer;
+
+}
+.d2 button::before{
+    content: "";
+    background-color: rgba(147, 142, 142, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: width 0.5s;
+}
+.d2 button:hover::before
+{
+    width: 100%;
+}
+.icn button{
+    border: none;
+    background-color: whitesmoke;
+}
+.icn button:hover{
+    cursor: pointer;
+}
+.srch
+{
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    width: 20%;
+    height: 250px;
+    position: fixed;
+    top:40px;
+    right: 0%;
+    background-color: white;
+    /* top: 10; */
+    /* border: 2px solid red; */
+    z-index: 1;
+}
+.srch2{
+    
+    visibility: hidden;
+}
+.srch1
+{
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+    height: 40px;
+    font-size: 1rem;
+    padding-left: 5%;
+}
+.srch1 :hover{
+    border: 2px solid black;
+}
+.srch p
+{
+    font-size: 1.3rem;
+    margin-left: 10%;
+    margin-top: 10px;
+    position: relative;
+}
+.srch p::after
+{
+   content: "";
+   background-color: rgba(0, 0, 0,0.7);
+   position: absolute;
+   top: 27px;
+   left: 0;
+   width: 100%;
+   height: 2px;
+
+}
+.popular li{
+    list-style-type: none;
+    margin-left: 10%;
+    margin-top: 12px;
+}
+
+.form
+{
+    border: 2px solid black;
+    width: 35%;
+    display: flex;
+    /* padding-left: 5%; */
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #f5f6f7;
+    display: none;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+
+}
+.container
+        {
+            pointer-events: auto;
+        }
+.icon111
+        {
+            display: inline-block;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        .icon111:hover
+        {
+            cursor: pointer;
+        }
+        .bard{
+            width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+        }
+         .bard1
+        {
+            transform: translate(0,11px) rotate(-45deg);
+        }
+         .bard2
+        {
+            opacity: 0;
+        }
+        .bard3
+        {
+            transform: translate(0,-11px) rotate(45deg);
+        }
+        
+.form h1{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+.form p{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 34px;
+}
+.form input{
+    border-radius: 10px;
+}
+.form .name
+{
+    font-size: 1.2rem;
+    height: 40px;
+    width: 200px;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+.form #sname
+{
+    margin-left: 5px;
+}
+.form #mobile
+{
+    height: 40px;
+    width: 405px;
+}
+.form #pswd
+{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    height: 40px;
+    width: 405px;
+    margin-left: 45px;
+    padding-left: 15px;
+}
+.form .birth
+{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 47px;
+    padding-top: 20px;
+}
+.form .birth select{
+    height: 30px;
+    width: 120px;
+    font-weight: 200;
+    padding-left: 10px;
+    margin-left: 5px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.form .gender{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 47px;
+    padding-top: 20px;
+}
+.form .gender1
+{
+    display: flex;
+    
+}
+.form .gender1 div
+{
+
+    border: 2px solid black;
+    margin-left: 20px;
+    height: 30px;
+    width: 120px;
+    padding-left: 10px;
+    padding-top: 3px;
+    border-radius: 5px;
+}
+.form .gender1 div input{
+    margin-left: 20px;
+}
+.form .country11
+{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 47px;
+    padding-top: 20px;
+}
+.form .country11 select{
+    height: 30px;
+    width: 200px;
+    font-weight: 200;
+    padding-left: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form .state11
+{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 47px;
+    padding-top: 10px;
+}
+.form .state11 select{
+    height: 30px;
+    width: 200px;
+    font-weight: 200;
+    padding-left: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.form .submitform
+{
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-left: 154px;
+    padding-top: 10px;
+}
+.form .submitform input{
+    height: 30px;
+    background-color: red;
+    color: white;
+    width: 200px;
+    font-weight: 200;
+    padding-left: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+#india
+{
+    display: none;
+}
+#pakistan
+{
+    display: none;
+}

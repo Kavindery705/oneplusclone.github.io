@@ -1,0 +1,113 @@
+.section1
+{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+.bgimg1
+{
+    width: 100%;
+    height: 100%;
+    background: url('../images/sect1.webp') no-repeat center center/cover;
+    position: absolute;
+    visibility: hidden;
+}
+.bgchng
+{
+    visibility: visible;
+
+}
+.bgimg1 h1{
+    padding-top: 17vh;
+    padding-left: 10%;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.bgimg1 p{
+    margin-top: 40vh;
+    padding-left: 10%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.bgimg1 .notify
+{
+    position: relative;
+    width: 320px;
+    height: 38px;
+    background-color: black;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 100;
+    margin-top: 2vh;
+    margin-left: 10%;
+}
+.bgimg1 .notify:hover{
+    cursor: pointer;
+}
+.bgimg1 .notify::before{
+    content: "";
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    z-index: 1;
+    transition: width 0.5s;
+}
+.bgimg1 .notify:hover::before{
+    width: 100%;
+}
+.bgimg2
+{
+    width: 100%;
+    height: 100%;
+    background: url('../images/sect2.webp') no-repeat center center/cover;
+
+}
+.bgimg2 h1{
+    padding-top: 17vh;
+    padding-left: 8%;
+    font-size: 3rem;
+    color: white;
+    font-weight: 500;
+}
+.bgimg2 p{
+    color: white;
+    margin-top: 40vh;
+    padding-left: 8%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.bgimg2 .notify
+{
+    position: relative;
+    width: 320px;
+    height: 38px;
+    background-color: black;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 100;
+    margin-top: 2vh;
+    margin-left: 8%;
+}
+.bgimg2.notify:hover{
+    cursor: pointer;
+}
+.bgimg2 .notify::before{
+    content: "";
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: white;
+    z-index: 1;
+    transition: width 0.5s;
+}
+.bgimg2 .notify:hover::before{
+    width: 100%;
+}

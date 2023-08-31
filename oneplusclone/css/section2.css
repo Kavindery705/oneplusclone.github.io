@@ -1,0 +1,86 @@
+.section2
+{
+    /* border: 2px solid green; */
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 0;
+    overflow: hidden;
+    transition: width 1s ease-in-out;
+}
+.section22
+{
+    width: 100%;
+}
+.power h4{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 20px;
+    /* margin-top: 20px; */
+    padding-left: 80px;
+    /* margin-left: 20px; */
+}
+.power h1{
+    font-size: 3rem;
+    font-weight: 500;
+    padding-top: 3px;
+    /* margin-top: 20px; */
+    padding-left: 75px;
+    /* margin-left: 20px; */
+}
+.power p{
+    font-size: 1rem;
+    font-weight: 300;
+    /* padding-top: 3px; */
+    margin-top: 200px;
+    padding-left: 60px;
+    /* margin-left: 20px; */
+}
+.power .buy{
+    font-size: 1rem;
+    width: 150px;
+    height: 40px;
+    margin-left: 50px;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    position: relative;
+}
+
+.power .lrn
+{
+    margin-left: 5px;
+}
+.power .buy:hover{
+    cursor: pointer;
+}
+.power .buy::after{
+    content: "";
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    transition: width 0.5s;
+}
+.power .buy:hover span{
+    z-index: 3;
+    color: white;
+}
+.power .buy:hover::after
+{
+    width: 100%;
+}
+
+.img11r img{
+    margin-left: 60px;
+    height: 400px;
+    width: 700px;
+}
+.img11r img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
